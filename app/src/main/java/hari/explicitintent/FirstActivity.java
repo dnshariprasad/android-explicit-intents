@@ -48,6 +48,7 @@ public class FirstActivity extends AppCompatActivity {
         switch (id) {
             case R.id.explicit_intent_one:
                 Intent oneIntent = new Intent(this, SecondActivity.class);
+                oneIntent.putExtra("MY_DATA", "Hi am so ans so..");
                 startActivity(oneIntent);
                 break;
             case R.id.explicit_intent_two:
